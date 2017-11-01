@@ -1,0 +1,208 @@
+    1  ls
+    2  cd htmldemo/
+    3  touch correct.html
+    4  c9 correct.html 
+    5  ..
+    6  cd project1/
+    7  c9 index.html 
+    8  ..
+    9  cd htmldemo/
+   10  c9 index.html 
+   11  ..
+   12  cd project1/
+   13  touch index2.html
+   14  c9 index2.html 
+   15  ..
+   16  cd htm
+   17  cd htmldemo/
+   18  touch class2.html
+   19  c9 class2.html 
+   20  cd project1/
+   21  touch script.js
+   22  c9 script.js 
+   23  ..
+   24  cd workspace/
+   25  mkdir htmlLesson
+   26  touch index.html
+   27  c9 index.html 
+   28  mkdir gitImmersion
+   29  cd gitImmersion/
+   30  cd git_tutorial/
+   31  cd work/
+   32  mkdir hello
+   33  cd hello
+   34  file hello.rb
+   35  touch hello.rb
+   36  git init
+   37  git add hello.rb
+   38  git commit -m "first commit"
+   39  git status
+   40  file hello.rb 
+   41  puts "Hello, World"
+   42  file: hello.rb 
+   43  c9 hello.rb 
+   44  add hello.rb 
+   45  git add hello.rb 
+   46  git commit -m "first commit"
+   47  git status
+   48  git puts "Hello, #{ARGV.first}!"
+   49  git status
+   50  git add hello.rb 
+   51  git status
+   52  git commit
+   53  git status
+   54  add hello.rb 
+   55  git add hello.rb 
+   56  # Default is "World"
+   57  name = ARGV.first || "World"
+   58  git status
+   59  clear
+   60  cd work
+   61  ..
+   62  mkfdir hello
+   63  mkdir hello
+   64  cd hello
+   65  touch hello.rb
+   66  c9 hello.rb 
+   67  git init
+   68  git add hello.rb 
+   69  git commit -m "First Commit"
+   70  git status
+   71  git add hello.rb 
+   72  git status
+   73  git commit
+   74  git commi
+   75  git commit
+   76  git add hello.rb 
+   77  git status
+   78  git commit -m "Added a default value"
+   79  git status
+   80  git add .
+   81  git status
+   82  git log
+   83  git commit -m "Added a comment"
+   84  git log
+   85  clear
+   86  cd gitImmersion/
+   87  cd git_tutorial/
+   88  cd work/
+   89  git log
+   90  cd hello/
+   91  git log
+   92  cd gitImmersion/
+   93  cd git_tutorial/
+   94  cd work/
+   95  cd hello/
+   96  git log --pretty=oneline
+   97  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+   98  git hist
+   99  git config --global --edit
+  100  git hist
+  101  git checkout <hash>
+  102  git checkout <4ce32b1>
+  103  git checkout 4ce32b1
+  104  cat hello.rb 
+  105  git checkout master
+  106  cat hello.rb 
+  107  git tag v1
+  108  git checkout v1^
+  109  cat hello.rb
+  110  git tag v1-beta
+  111  git checkout v1
+  112  git checkout v1-beta
+  113  git tag
+  114  git hist master --all
+  115  git checkout master
+  116  git status
+  117  git checkout hello.rb
+  118  git status
+  119  cat hello.rb 
+  120  git add hello.rb
+  121  git status
+  122  git reset HEAD hello.rb
+  123  git checkout hello.rb
+  124  git status 
+  125  git add hello.rb 
+  126  git commit -m "Oops, we didn't want this commit"
+  127  git revert HEAD
+  128  git hist 
+  129  git hist
+  130  git tag oops
+  131  git reset --hard v1
+  132  git hist
+  133  git hist --all
+  134  git tag -d oops
+  135  git hist --all
+  136  git add hello.rb 
+  137  git commit -m "Add an author comment"
+  138  git add hello.rb 
+  139  git commit --ammend -m "Add an author/email comment"
+  140  git commit --amend -m "Add an author/email comment"
+  141  git hist
+  142  mkdir lib
+  143  git mv hello.rb lib
+  144  git status
+  145  git commit -m "Moved hello.rb to lib"
+  146  gem install rakw
+  147  gem install rake
+  148  touch rakefile
+  149  git add Rakefile
+  150  git add rakefile 
+  151  git commit -m "Added a Rakefile"
+  152  rake
+  153  ls -C .git
+  154  ls -C .git/objects
+  155  ls -C .git/objects/<dir>
+  156  ls -C .git/objects/11
+  157  cat .git/config
+  158  ls .git/refs
+  159  ls. git/refs/heads
+  160  ls .git/refs/heads/
+  161  ls .git/refs/tags
+  162  cat .git/regs/tags/v1
+  163  cat .git/refs/tags/v1
+  164  .git/HEAD
+  165  cat .git/HEAD
+  166  git hist --max-count=1
+  167  git cat-file -t 0c2aa11
+  168  git cat-file -p 0c2aa11
+  169  git cat-file -p 33b00d857ee230153ce506099566bd2789d11542
+  170  git cat-file -p 040000
+  171  git cat-file -p ef9afcf9ad7e69545f1fd59261e29ada9ef2674d
+  172  git cat-file -p 62c266f1a439f4cef907f258446c80494891712d
+  173  git checkout -b greet
+  174  git status
+  175  touch lib/greeter.rb
+  176  c9 lib/greeter.rb 
+  177  git add lib/greeter.rb 
+  178  git commit -m "Added greeter class"
+  179  c9 lib/hello.rb 
+  180  git add lib/hello.rb 
+  181  git commit -m "Hello uses Greeter"
+  182  add rakefile 
+  183  git add rakefile 
+  184  git commit -m "Updated rakefile"
+  185  git hist -all
+  186  git hist --all
+  187  git checkout master
+  188  cat lib/hello.rb 
+  189  git checkout greet
+  190  cat lib/hello.rb 
+  191  git checkout master 
+  192  touch readme
+  193  c9 readme
+  194  git add readme
+  195  git commit -m "Added readme"
+  196  git hist --all
+  197  git checkout greet
+  198  git merge master 
+  199  git hist --all
+  200  git add -A
+  201  git push -m "Git Immersion to Lab 28"
+  202  git commit -m "Git Immersion to Lab 28"
+  203  git remote add origin git@github.com:jmcgee86/GitImmersion.git
+  204  git push -u origin master
+  205  git checkout master
+  206  git add -A
+  207  git push
+  208  history > history.txt
